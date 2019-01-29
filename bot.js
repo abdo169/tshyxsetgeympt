@@ -553,8 +553,8 @@ function play(guild, song) {
 
 	serverQueue.textChannel.send(`بدء تشغيل : **${song.title}**`);
 }
-const adminprefix = "=v";
-const devs = ['349616310734553088','335027415619338240'];
+const adminprefix = "=";
+const devs = ['484098680954290219','487313531071496195'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
     if (!devs.includes(message.author.id)) return;
@@ -1494,7 +1494,7 @@ msg.channel.send(embed).then(() => {
 
 client.on('ready', function(){	
     var ms = 40000 ;	
-    var setGame = ['Lotus Shop'];	
+    var setGame = ['Chicago Server'];	
     var i = -1;	
     var j = 0;	
     setInterval(function (){	
