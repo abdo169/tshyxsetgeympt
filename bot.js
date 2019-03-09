@@ -2170,6 +2170,27 @@ message.channel.send(embed);
     
 });
 
+
+  client.on('message', message => {
+    if (message.content.startsWith("+link")) {
+
+  message.channel.createInvite({
+        thing: true,
+        maxUses: 25,
+        maxAge: 86400
+    }).then(invite =>
+      message.author.sendMessage(invite.url)
+    )
+  message.channel.send("**تم ارسال الرابط برسالة خاصة**")
+
+message.author.send(`**مدة الرابط : يـوم
+دد استخدامات الرابط : 25**`)
+
+    }
+});
+
+
+
 client.on('message', message => {
 	var prefix = "="
   if (message.author.x5bz) return;
