@@ -3311,7 +3311,7 @@ client.on("message", (message) => {
 })
 .on("ready", () => {
     client.guilds.forEach(guild => {
-        var channel = guild.channels.find(channel => channel.name.includes("sweetie online:"))
+        var channel = guild.channels.find(channel => channel.name.includes("Chicago online:"))
         if (channel) {
             data[channel.id] = true;
         }
